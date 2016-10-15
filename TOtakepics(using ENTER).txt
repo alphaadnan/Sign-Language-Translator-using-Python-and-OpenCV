@@ -1,0 +1,20 @@
+    cv2.imshow("Threshold", thresh1)
+    cv2.imshow('Mask', mask)
+
+    k = 0xFF & cv2.waitKey(10)  # escape kep value = 27
+    if k == 27:
+        break
+
+    if k == 13:
+        name = str(unichr(i + 64)) + "_" + str(j) + ".jpg"
+        cv2.imwrite(name, imgT)
+        if (j < 400):
+            j += 1
+        else:
+            while (0xFF & cv2.waitKey(0) != ord('n')):
+                j = 201
+            j = 201
+            i += 1
+
+cap.release()
+cv2.destroyAllWindows()
