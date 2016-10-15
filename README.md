@@ -1,4 +1,4 @@
-# Sign-Language-Translator-Using-Python-and-OpenCV-
+# Sign-Language-Translator-using-Python-and-OpenCV
 
 Mini-Project (7th Semester) Submission
 
